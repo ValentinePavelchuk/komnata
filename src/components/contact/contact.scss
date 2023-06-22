@@ -1,0 +1,64 @@
+.contact {
+  background-color: $bg-secondary;
+  text-align: center;
+  padding: 0;
+
+  &-wrapper {
+    background-color: $bg-extra;
+    padding-top: clamp(32px, 2rem, 130px);
+    padding-bottom: clamp(32px, 2rem, 82px);
+  }
+
+  &-data {
+    margin-top: 25px;
+
+    &__item {
+      &:last-of-type {
+        margin-top: 16px;
+      }
+
+      &--mob {
+        @media(min-width: $screen-md) {
+          display: none;
+        }
+      }
+    }
+
+    &-header {
+      margin-bottom: 4px;
+      font-size: 16px;
+      opacity: 0.5;
+    }
+  }
+
+  &-form {
+    margin-top: 16px;
+    padding: 27px 25px 38px;
+    background-color: $bg-extra-2;
+
+    &__terms {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-top: 16px;
+      text-align: left;
+
+      &-descr {
+        display: inline;
+        margin: 0;
+        font-size: clamp(12px, 0.6rem, 14px);
+        line-height: 16px;
+
+        & a {
+          font-size: clamp(12px, 0.6rem, 14px);
+          line-height: 16px
+        }
+      }
+    }
+
+    &__checkbox {
+      flex-shrink: 0;
+      margin-right: 12px;
+    }
+  }
+}

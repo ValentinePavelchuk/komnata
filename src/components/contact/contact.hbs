@@ -1,0 +1,30 @@
+<section class="contact">
+    <div class="contact-wrapper rounded">
+        <div class="container">
+        <div class="contact-header">
+            <h2 class="title white-txt">Связаться с нами</h2>
+            <p class="txt white-txt">Оставьте свое сообщение и мы свяжемся с вами в ближашее время для уточнения деталей.</p>
+        </div>
+        <div class="contact-data">
+            <div class="contact-data__item contact-data__item--mob">
+                <p class="contact-data-header white-txt">Телефон:</p>
+                {{> link class="contact-data-link link--white" href="tel:+375 29 361 55 87" text="+375 29 361 55 87"}}
+            </div>
+            <div class="contact-data__item contact-data__item--mob">
+                <p class="contact-data-header white-txt">Адрес:</p>
+                {{> link class="contact-data-link link--white" href="https://yandex.ru/maps/-/CCU9jHxZLC" text="Минск, ул. Богдановича 78"}}
+            </div>
+        </div>
+        <form action="" class="contact-form rounded">
+            {{> input class="contact-form__input" inputId="contact-form-name" type="text" placeholder="Ваше имя"}}
+            {{> input class="contact-form__input" inputId="contact-form-name" type="text" placeholder="Номер телефона"}}
+            {{> textarea id="contact-textarea" name="contact-textarea" placeholder="Сообщение"}}
+            {{> button class="contact-form__btn" text="Отправить"}}
+            <div class="contact-form__terms">
+                {{> checkbox class="contact-form__checkbox" id="contact-form-terms"}}
+                <p class="contact-form__terms-descr white-txt"><i>Я принимаю условия обработки {{> link class="brand-txt" href="/" text="персональных данных"}}</i></p>
+            </div>
+        </form>
+    </div>
+    </div>
+</section>

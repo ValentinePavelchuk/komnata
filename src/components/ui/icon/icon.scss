@@ -1,0 +1,24 @@
+.icon-component {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+
+  &--menu {
+    &:hover {
+      filter: invert(87%) sepia(29%) saturate(6143%) hue-rotate(357deg) brightness(104%) contrast(109%);
+
+    }
+  }
+
+  &--brand {
+    filter: invert(87%) sepia(29%) saturate(6143%) hue-rotate(357deg) brightness(104%) contrast(109%);
+  }
+
+  &--nofilter {
+    filter: unset;
+  }
+}

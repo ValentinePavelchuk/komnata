@@ -1,0 +1,26 @@
+$border-color: #ABABAB;
+$border-color-focus: $color-brand;
+$border-color-err: $error;
+$bg: #fff;
+$bg-disabled: #E9E9E9;
+
+.area-component {
+  margin-bottom: 20px;
+}
+
+.textarea {
+  padding: 14px 16px;
+  width: 100%;
+  min-height: 65px;
+  font-size: 16px;
+  border: unset;
+  outline: unset;
+  border-radius: 10px;
+  font-family: "Open Sans", sans-serif;
+
+  &::placeholder {
+    color: $text-color-primary;
+    opacity: 0.5;
+    font-style: italic;
+  }
+}

@@ -1,0 +1,21 @@
+@import "styles/variables";
+
+a, .link {
+  font-size: clamp(14px, 1.5rem, 16px);
+  font-weight: 300;
+  line-height: clamp(20px, 1.375rem, 28px);
+  color: $text-color-thrid;
+
+  &:hover {
+    text-decoration: unset;
+  }
+
+  &--white {
+    color: $text-color-secondary;
+    text-decoration: unset;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

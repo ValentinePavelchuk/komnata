@@ -1,0 +1,51 @@
+$border-color: #ABABAB;
+$border-color-focus: $color-brand;
+$border-color-err: $error;
+$bg: #fff;
+$bg-disabled: #E9E9E9;
+
+.input-component {
+  margin-bottom: 20px;
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba($text-color-primary, 0.5);
+}
+
+.input-field {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 16px;
+  border: unset;
+  background: $bg;
+  border-radius: 10px;
+  font-family: inherit;
+
+  &--error {
+    border-color: $border-color-err;
+  }
+
+  &--border {
+    border: 1px solid $border-color;
+  }
+
+  &::placeholder {
+    color: $text-color-primary;
+    opacity: 0.5;
+    font-style: italic;
+  }
+
+  &:disabled {
+    background: $bg-disabled;
+  }
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: $border-color-focus;
+}

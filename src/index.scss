@@ -1,0 +1,108 @@
+@import "styles/new-reset";
+@import "styles/breakpoints";
+@import "styles/variables";
+@import "styles/typography";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 5vw;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  overflow-x: hidden;
+}
+
+a {
+  cursor: pointer;
+}
+
+section {
+  padding-top: clamp(32px, 2rem, 130px);
+  padding-bottom: clamp(32px, 2rem, 82px);
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  @media(min-width: $screen-sm) {
+    padding: 0 32px;
+  }
+
+  @media(min-width: $screen-md) {
+    padding: 0 64px;
+  }
+
+  @media(min-width: $screen-lg) {
+    padding: 0 210px;
+  }
+}
+
+.rounded {
+  border-radius: 10px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-button-disabled {
+  opacity: 0.5;
+}
+
+.swiper-btn {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: opacity $transition;
+
+  @media(min-width: $screen-md) {
+    top: 45px;
+  }
+}
+
+.swiper-btn-next {
+  left: calc(50% + 32px);
+
+  @media(min-width: $screen-md) {
+    left: 90px;
+  }
+}
+
+.swiper-btn-prev {
+  left: calc(50% - 32px);
+
+  @media(min-width: $screen-md) {
+    left: 24px;
+  }
+}
+
+@import "components/ui/button/button";
+@import "components/ui/input/input";
+@import "components/ui/textarea/textarea";
+@import "components/ui/checkbox/checkbox";
+@import "components/ui/icon/icon";
+@import "components/ui/img-card/img-card";
+@import "components/header/header";
+@import "components/main/main";
+@import "components/about/about";
+@import "components/rooms/rooms";
+@import "components/intrested/interested";
+@import "components/price/price";
+@import "components/contact/contact";
+@import "components/social/social";
+@import "components/footer/footer";

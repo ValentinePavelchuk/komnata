@@ -1,0 +1,49 @@
+$bg: $color-brand;
+$bg-trans: transparent;
+$bg-hover: #E7B60A;
+$bg-inst: linear-gradient(90deg, #FFC700 0.3%, #FF8616 16.45%, #EE3C2B 36.24%, #F33E66 56.03%, #FA4AD8 77.9%, #8E1AFF 100.3%);
+$bg-inst-hover: linear-gradient(270deg, #FFC700 0%, #FF8616 16.15%, #EE3C2B 35.94%, #F33E66 55.73%, #FA4AD8 77.6%, #8E1AFF 100%);
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  background: $bg;
+  border-radius: 30px;
+  border: unset;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: unset;
+  color: $text-color-primary;
+  cursor: pointer;
+
+  &:hover {
+    background: $bg-hover;
+  }
+
+  &:focus {
+    opacity: .5;
+  }
+
+  &--trans {
+    background: $bg-trans;
+    border: 1px solid $bg;
+    color: $color-brand;
+
+    &:hover {
+      color: $text-color-secondary;
+    }
+  }
+
+  &--inst {
+    background: $bg-inst;
+    color: $text-color-secondary;
+
+    &:hover {
+      background: $bg-inst-hover;
+    }
+  }
+}

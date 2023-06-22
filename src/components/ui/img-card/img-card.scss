@@ -1,0 +1,32 @@
+.img-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: clamp(137px, 8.56rem, 240px);
+  height: clamp(154px, 10rem, 270px);
+  border-radius: 8px;
+
+  &__text {
+    margin: 0;
+    font-size: clamp(42px,3rem,48px);
+    font-weight: 700;
+    line-height: 57px;
+    color: $color-brand;
+    text-transform: uppercase;
+
+    &--sm {
+      font-size: clamp(16px, 1rem, 16px);
+      font-weight: 400;
+      line-height: 22px;
+    }
+  }
+
+  &__descr {
+    margin: 0;
+    font-size: clamp(16px, 1rem, 18px);
+    font-weight: 300;
+    line-height: 28px;
+    color: $text-color-secondary;
+  }
+}

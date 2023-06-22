@@ -1,0 +1,105 @@
+.rooms {
+  background: $bg-thrid;
+
+  &-tab-item {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &-tab-control {
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+    margin: 0 auto;
+
+    @media(min-width: $screen-md) {
+      justify-content: flex-start;
+      margin: 0;
+    }
+  }
+
+  &-tab-btn {
+    cursor: pointer;
+
+    @media(min-width: $screen-md) {
+      &:last-of-type {
+        margin-left: 30px;
+      }
+    }
+
+    &.active {
+      & > p {
+        color: $color-brand;
+
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &-tab-text {
+    position: relative;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28px;
+    color: $text-color-secondary;
+    transition: all $transition;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 4px;
+      background-color: $color-brand;
+      transition: width $transition;
+    }
+
+    &:hover {
+      color: $color-brand;
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  &-header {
+    margin-top: 32px;
+    text-align: center;
+
+    @media(min-width: $screen-md) {
+      display: flex;
+      gap: 10px;
+      text-align: left;
+
+      &__title {
+        min-width: 50%;
+        flex-shrink: 0;
+      }
+
+      &__descr {
+        margin: 0;
+      }
+    }
+  }
+
+  &-slider {
+    padding-top: 82px;
+    position: relative;
+
+    @media(min-width: $screen-md) {
+      padding-top: 102px;
+    }
+
+
+    &__item {
+      max-width: clamp(280px, 17.5rem, 390px);
+    }
+  }
+}

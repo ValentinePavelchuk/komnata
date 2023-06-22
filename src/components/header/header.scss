@@ -1,0 +1,62 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: clamp(48px, 3rem, 76px);
+  padding: 10px 16px;
+  background: rgba(#20140E99, 60%);
+  backdrop-filter: blur(7px);
+  z-index: 100;
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      text-decoration: none;
+      color: $color-brand;
+    }
+  }
+
+  &__text {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__burger {
+    display: flex;
+    cursor: pointer;
+
+    @media(min-width: $screen-lg) {
+      display: none;
+    }
+  }
+
+  &__nav {
+    display: none;
+
+    @media(min-width: $screen-lg) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+  }
+
+  &__nav-item {
+    display: flex;
+  }
+}

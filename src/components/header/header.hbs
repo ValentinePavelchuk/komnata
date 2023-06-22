@@ -1,0 +1,19 @@
+<header class="header" id="header">
+    <a class="header__logo link--white">
+        {{> icon iconSrc="images/icons/logo.svg" class="icon--brand" iconAlt="Komanata"}}
+        <p class="header__text">{{logoText}}</p>
+    </a>
+    <div class="header__burger">
+        {{> icon iconSrc="images/icons/menu.svg" class="icon--menu" iconAlt="Меню"}}
+    </div>
+    <nav class="header__nav">
+        <ul class="header__nav-list">
+            <li class="header__nav-item">{{> link class="header__nav-link link--white" href="#" text="Комната №1"}}</li>
+            <li class="header__nav-item">{{> link class="header__nav-link link--white" href="#" text="Комната №2"}}</li>
+            <li class="header__nav-item">{{> link class="header__nav-link link--white" href="#" text="Цены"}}</li>
+            <li class="header__nav-item">{{> link class="header__nav-link link--white" href="#" text="Контакты"}}</li>
+            <li class="header__nav-item">{{> link class="header__nav-link link--white" href="tel:+375293615587" text="+375 (29) 361 55 87"}}</li>
+        </ul>
+        {{> button class="header__nav-btn" text="Забронировать"}}
+    </nav>
+</header>

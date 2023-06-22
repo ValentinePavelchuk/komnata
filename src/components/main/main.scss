@@ -1,0 +1,10 @@
+.main {
+  text-align: center;
+  padding: 110px 0 58px;
+  background: url("images/main-bg.jpeg") no-repeat center;
+  background-size: cover;
+
+  &__btn {
+    margin-top: clamp(16px, 1rem, 48px);
+  }
+}

@@ -1,0 +1,86 @@
+.interested {
+  &-header {
+    text-align: center;
+
+    @media(min-width: $screen-md) {
+      display: flex;
+      justify-content: space-between;
+      gap: 60px;
+      text-align: left;
+    }
+
+    &__title {
+      flex-shrink: 0;
+    }
+  }
+
+  &-card {
+    position: relative;
+
+    @media(min-width: $screen-md) {
+      height: 100%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 50%;
+      background: linear-gradient(180deg, #26160500 0%, #261605 100%);
+      z-index: 1;
+    }
+
+    &__img {
+      @media(min-width: $screen-md) {
+        height: 100%;
+      }
+    }
+
+    &__descr {
+      position: absolute;
+      left: 15px;
+      bottom: 15px;
+      font-size: 18px;
+      font-weight: 400;
+      z-index: 2;
+
+      @media(min-width: $screen-md) {
+        left: 15px;
+        bottom: 20px;
+      }
+    }
+  }
+
+  &-cards {
+    display: none;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 60px;
+
+    @media(min-width: $screen-md) {
+      display: grid;
+    }
+
+    &__item {
+      &:last-of-type {
+        grid-area: 2 / 3 / 4 / 5;
+      }
+    }
+  }
+
+  &-slider {
+    padding-top: 82px;
+    position: relative;
+
+    @media(min-width: $screen-md) {
+      display: none;
+    }
+
+    &__item {
+      max-width: clamp(280px, 17.5rem, 390px);
+    }
+  }
+}
